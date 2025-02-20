@@ -4,7 +4,7 @@ namespace WebGame397
 {
     [RequireComponent(typeof(Rigidbody))]
 
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : Subject
     {
 
         [SerializeField] private InputReader input;
@@ -27,7 +27,7 @@ namespace WebGame397
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         private void Start()
         {
-            //Debug.Log("[Start]");
+            NotifyObservers();
             input.EnablePlayerActions();
         }
 
