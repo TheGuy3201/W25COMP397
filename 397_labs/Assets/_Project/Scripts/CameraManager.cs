@@ -19,8 +19,8 @@ namespace WebGame397
                 player = GameObject.FindGameObjectWithTag("Player").transform;
             }
 
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
 
         //On enable, i want to associate the transform of our player into the target of your cinemachine camera
